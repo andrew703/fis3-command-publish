@@ -49,7 +49,6 @@ exports.run = function(argv, cli) {
         "f": './output/' + (channel == 'map' ? 'fwmap/upload/event-lmat/' : 'static/event-lmat/') + 'lmat-project.zip'
     });
     console.log('开始上线，请耐心等候...'.green);
-    return this;
     exec(_cmd, function(error, stdout, stedrr) {
         stdout = JSON.parse(stdout);
         console.log('stdout:', stdout);
