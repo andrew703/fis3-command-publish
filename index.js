@@ -34,7 +34,7 @@ exports.run = function(argv, cli) {
     console.log('已删除上次编译结果'.green);
     //重新项目，将编译之后的工程放置在output目录下
     console.log('开始编译项目'.green);
-    execSync('lmat release ' + (channel == 'map' ? 'prod-map' : 'prod') + ' -d output');
+    execSync('fis3 release ' + (channel == 'map' ? 'prod-map' : 'prod') + ' -d output');
     //压缩为zip
     console.log('开始压缩源代码为zip'.green);
     execSync('cd ./output/' + (channel == 'map' ? 'fwmap/upload/event-lmat/' : 'static/event-lmat/') + ' && zip -r lmat-project.zip ./ -x *.DS_Store');
@@ -49,6 +49,7 @@ exports.run = function(argv, cli) {
         "f": './output/' + (channel == 'map' ? 'fwmap/upload/event-lmat/' : 'static/event-lmat/') + 'lmat-project.zip'
     });
     console.log('开始上线，请耐心等候...'.green);
+    return this;
     exec(_cmd, function(error, stdout, stedrr) {
         stdout = JSON.parse(stdout);
         console.log('stdout:', stdout);
