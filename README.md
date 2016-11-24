@@ -13,21 +13,21 @@ git clone https://github.com/andrew703/fis3-command-publish.git
 ## 使用方法
 #### 将项目发布至 lvyou.baidu.com 域名
 ```sh
-    fis3 publish --channel nuomi
+fis3 publish --channel nuomi
 ```
 #### 以 lmat-test 项目为例
 #### 线上路径为 http://lvyou.baidu.com/static/event-lmat/lmat-test/index/
 
 将项目发布至 map.baidu.com 域名
 ```sh
-    fis3 publish --channel map
+fis3 publish --channel map
 ```
 #### 以 lmat-test 项目为例
 #### 线上路径为 http://map.baidu.com/fwmap/upload/event-lmat/lmat-test/index/
 
 修改项目的上一级路径名称
 ```sh
-    fis3 publish --path [PATHNAME] --channel map
+fis3 publish --path [PATHNAME] --channel map
 ```
 #### 以 lmat-test 项目为例
 #### 线上路径为 http://map.baidu.com/fwmap/upload/event-lmat/[PATHNAME]/lmat-test/index/
