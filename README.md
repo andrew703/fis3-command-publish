@@ -8,6 +8,8 @@
 ```sh
 cd /usr/local/lib/node_modules
 git clone https://github.com/andrew703/fis3-command-publish.git
+cd fis3-command-publish
+npm install
 ```
 
 ## 使用方法
