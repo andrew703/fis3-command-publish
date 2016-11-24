@@ -4,6 +4,11 @@
 
 ## 安装
 
+### 通过 npm 安装
+```sh
+npm install -g fis3-command-publish
+```
+
 ### 通过 git 安装
 ```sh
 cd /usr/local/lib/node_modules
