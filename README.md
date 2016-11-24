@@ -10,7 +10,7 @@ cd /usr/local/lib/node_modules
 git clone https://github.com/andrew703/fis3-command-publish.git
 ```
 
-### 使用方法
+## 使用方法
 #### 将项目发布至 lvyou.baidu.com 域名
 ```sh
     fis3 publish --channel nuomi
